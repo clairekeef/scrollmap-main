@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scrollmap Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="stylesheet" href="../dist/scrollmap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Niconne&display=swap" rel="stylesheet"> 
+
+    <style>
+        body{
+            font-family: 'Goudy Bookletter 1911', serif;
+        }
+        p{
+            font-size:20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+        <!--title block, background image is title image-->
+        <div class="row" style="background-image:url(img/title.png)">
+            <div class="center title">
+                <!--title text-->
+                <h1>Pumpkin Patch</h1>
+                <!--subtitle or author-->
+                <p class="author">Gareth Baldrica-Franklin</p>
+            </div>
+        </div>
+        <!--text block-->
+        <div class="row">
+            <div class="center">
+                <p>My style is called <b>Pumpkin Patch</b> and is based on the Fall season.</p>
+            </div>
+        </div>
+        <!--side-by-side image and text block-->
+        <div class="row" id="test">
+            <div class="left">
+                <p class="vert-center">In the map, pumpkins represent cities, and leaves highways.</p>
+            </div>
+            <div class="right">
+                <img class="fit" src="img/img1.png">
+            </div>
+        </div>
+        
+        <div class="row ">
+            <div class="center-wide">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!--slides-->
+                    <div class="slide">
+                        <img src="img/slide1.png" style="width:100%">
+                        <p class="caption">Caption Text</p>
+                    </div>
+                
+                    <div class="slide">
+                        <img src="img/slide2.png" style="width:100%">
+                        <p class="caption">Caption Two</p>
+                    </div>
+                
+                    <div class="slide">
+                        <img src="img/slide3.png" style="width:100%">
+                        <p class="caption">Caption Three</p>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+
+                    <!-- The dots/circles -->
+                    <div class="slideshow-dots">
+                        <span class="dot" id="1"></span>
+                        <span class="dot" id="2"></span>
+                        <span class="dot" id="3"></span>
+                    </div>
+                </div>
+                <br>
+                
+            </div>
+        </div>
+
+        <!--background images with text scrolling over them-->
+        <div class="scroll-container">    
+            <!--background images-->
+            <div class="background-item">
+                <!--data-slide property used to specify when the background should first-->
+                <img src="img/background.png" data-slide="1" class="fill">
+                <img src="img/background2.png" data-slide="3" class="fill hidden">
+            </div>
+            <!--foreground text blocks-->
+            <div class="foreground-item no-event">
+                <div class="row">
+                    <div class="center background-transparent">
+                        <p class="no-margin">But this style didn't always look like this.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent">
+                        <p class="no-margin">When I first created this style, it was all in black and white.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="right background-transparent">
+                        <p class="no-margin">But this style didn't always look like this.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mapbox iframe-->
+        <div class="row sm-margin">
+            <div class="center-wide">
+                <p>Play around the full map.</p>
+                <iframe src="https://api.mapbox.com/styles/v1/gbaldrica/ckgh1wbo509uq19paosz0h2it.html?fresh=true&title=copy&access_token=pk.eyJ1IjoiZ2JhbGRyaWNhIiwiYSI6ImNqZnlkeGtkbTRsYTEycXBvYWhvNHl6dHQifQ.gbIkzk7MVT9R9kPcPenRsA#5.75/46.235/-119.135/0/5" class="full-width half-height" style="height:500px;"></iframe>
+            </div>
+        </div>
+        <!--text block-->
+        <div class="row no-margin">
+            <div class="center">
+                <div class="credits">
+                    <hr>
+                    <p><b>Credits:</b></p>
+                    <p>Map created with Mapbox Studio</p>
+                    <p>Data from openstreetmap</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script type="text/javascript" src="../dist/scrollmap.js"></script>
+
+</body>
+</html>
