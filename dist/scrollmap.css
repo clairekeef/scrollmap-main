@@ -13,11 +13,11 @@ body{
     position:sticky;
     display:block;
     top:0;
-    margin-bottom:20%;
+    margin-bottom:2%;
 }
 .foreground-item{
     position:relative;
-    padding-bottom:50%;
+    padding-bottom:2%;
 }
 .hidden{
     display:none !important;
@@ -46,38 +46,29 @@ body{
     height:100%;
 }
 
-/*title*/
-.title{
-    height:100vh;   
-}
-.title > * {
-    display:inline-block;
-}
-.title h1{
-    font-size:100px;
-}
+
 
 /*bottom margin styles*/
 .row{
-    margin-bottom:30%;
+    margin-bottom:60px;
 }
 
 /*smaller bottom margin for rows in the foreground*/
 .foreground-item > .row{
-    margin-bottom:60%;
+    margin-bottom:8%;
 }
 .no-margin{
     margin-bottom:0 !important;
     margin-top:0 !important;
 }
 .lg-margin{
-    margin-bottom:100% !important;
+    margin-bottom:10% !important;
 }
 .md-margin{
-    margin-bottom:50% !important;
+    margin-bottom:10% !important;
 }
 .sm-margin{
-    margin-bottom:25% !important;
+    margin-bottom:10% !important;
 }
 
 /*block styles*/
@@ -97,6 +88,7 @@ body{
 .credits{
     text-align:left;
     margin-bottom:50px;
+    font-size: 20px;
 }
 .credits > p{
     margin-bottom:5px;
@@ -142,7 +134,7 @@ body{
     top: calc(50% - 30px);
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 1px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -164,6 +156,9 @@ body{
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.5);
     color:white;
+}
+img{
+    display:block;
 }
 
 .slide > img{
@@ -205,12 +200,12 @@ body{
 @media screen and (min-width: 1200px) {
     .center{
         flex: 0 0 auto;
-        margin-left:25%;
+        margin-left:5%;
         width:50% !important;
     }
     .center-wide{
         flex: 0 0 auto;
-        margin-left:15%;
+        margin-left:5%;
         width:70% !important;
     }
     .left{
@@ -220,23 +215,23 @@ body{
     }
     .right{
         flex: 0 0 auto;
-        margin-left:50%;
+        margin-left:5%;
         width: 41.66666667% !important;
     }
     .right-inline{
         width: 41.66666667% !important;
-        margin-left:20px;
+        margin-left:2px;
     }
 }
     @media screen and (min-width: 720px) and (max-width: 1199px) {
     .center{
         flex: 0 0 auto;
-        margin-left: 16.66666667%;
+        margin-left: 5.66666667%;
         width: 66.66666667% !important;
     }
     .center-wide{
         flex: 0 0 auto;
-        margin-left:15%;
+        margin-left:5%;
         width:70% !important;
     }
     .left{
@@ -246,12 +241,12 @@ body{
     }
     .right{
         flex: 0 0 auto;
-        margin-left:50%;
+        margin-left:5%;
         width: 45% !important;
     }
     .right-inline{
         flex: 0 0 auto;
-        margin-left:20px;
+        margin-left:2px;
         width: 45% !important;
     }
 
@@ -259,7 +254,7 @@ body{
 @media screen and (min-width: 540px) and (max-width: 719px) {
     .center, .center-wide{
         flex: 0 0 auto;
-        margin-left: 8.33333333%;
+        margin-left: 5.33333333%;
         width: 83.333333333% !important;
     }
     .left{
@@ -268,7 +263,7 @@ body{
     }
     .right{
         flex: 0 0 auto;
-        margin-left:50%;
+        margin-left:5%;
         width: 48% !important;
     }
     .right-inline{
@@ -291,10 +286,10 @@ body{
         width: 100% !important;
     }
     .row{
-        margin-bottom:50vh !important;
+        margin-bottom:10vh !important;
     }
     .foreground-item > .row{
-        margin-bottom:100%;
+        margin-bottom:10%;
     }
     /*move slideshow caption*/
     .caption{
